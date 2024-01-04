@@ -1,11 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
-import BlogsPage from "./components/BlogsPage";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
     <div>
-      <BlogsPage />
+      <Testimonials />
     </div>
   );
 }
