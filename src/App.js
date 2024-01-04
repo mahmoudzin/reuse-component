@@ -1,12 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
-import BlogsPage from "./components/BlogsPage";
+
+import BlogPage from "./components/BlogPage";
 
 function App() {
   return (
-    <div>
-      <BlogsPage />
-    </div>
+    <>
+      <BlogPage />
+    </>
   );
 }
 
