@@ -8,8 +8,10 @@ export default function ContactUsPage() {
       {/*  Form Section */}
       <FromComponent />
       {/*  Days Work Section */}
+      <DaysWork />
       {/*  Imag Section */}
       {/*  Question Section */}
+      <QuestionList />
     </>
   );
 }
@@ -119,7 +121,7 @@ const inputsData = [
 
 function FromComponent() {
   return (
-    <div className="flex flex-wrap justify-between px-[60px]] py-[60px] pb-[42px] items-center gap-8 rounded-b-12 border border-solid border-gray-700">
+    <div className="flex flex-wrap justify-between px-[60px] py-[60px] pb-[42px] items-center gap-8 rounded-b-12 border border-solid border-gray-700 mb-[37px]">
       {inputsData.map((item) => (
         <ContactInput {...item} />
       ))}
@@ -165,5 +167,45 @@ function ContactInput({ type, name, placeholder, label, options, width }) {
         />
       )}
     </div>
+  );
+}
+
+function DaysWork() {
+  return (
+    <div className="justify-start items-center gap-56 inline-flex mb-[38px]">
+      <div className="pl-5 pr-2.5 py-2.5 rounded-lg border border-neutral-800 justify-start items-center gap-5 flex">
+        <div className="justify-start items-start gap-2.5 flex">
+          <div className="p-4 bg-gradient-to-b from-neutral-800 to-neutral-800 rounded-md border border-zinc-800 flex-col justify-start items-start gap-2.5 inline-flex">
+            <div className="w-5 h-5 relative" />
+          </div>
+          <div className="p-4 bg-gradient-to-b from-neutral-800 to-neutral-800 rounded-md border border-zinc-800 flex-col justify-start items-start gap-2.5 inline-flex">
+            <div className="w-5 h-5 relative" />
+          </div>
+          <div className="p-4 bg-gradient-to-b from-neutral-800 to-neutral-800 rounded-md border border-zinc-800 flex-col justify-start items-start gap-2.5 inline-flex">
+            <div className="w-5 h-5 relative" />
+          </div>
+        </div>
+        <div className="text-neutral-200 text-base font-medium leading-normal">
+          كن علي تواصل
+        </div>
+      </div>
+
+      <div className="py-[50px] justify-start items-center gap-3.5 flex">
+        <div className="px-5 py-2.5 bg-gradient-to-bl from-sky-500 via-teal-500 to-sky-500 rounded-md justify-start items-center gap-3.5 flex">
+          <div className="text-neutral-200 text-base font-semibold leading-normal">
+            الأحد إلي الخميس
+          </div>
+        </div>
+        <div className="text-neutral-200 text-base font-semibold leading-normal">
+          أيام العمل
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function QuestionList() {
+  return (
+   
   );
 }
