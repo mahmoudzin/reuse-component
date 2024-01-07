@@ -1,11 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
-import BlogsPage from "./components/BlogsPage";
+import ServicePage from "./components/ServicePage";
 
 function App() {
   return (
-    <div>
-      <BlogsPage />
+    <div className="bg-black">
+      <ServicePage />
     </div>
   );
 }
